@@ -1,0 +1,17 @@
+
+Informações do Modelo Treinado
+==================================================
+
+Dataset: PlantVillage
+Classes: ['Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust']
+Número de classes: 3
+Acurácia de validação: 99.67%
+Loss de validação: 0.0229
+
+Arquitetura:
+- Base: MobileNetV2 (pré-treinado ImageNet)
+- Camadas adicionais: GlobalAveragePooling2D, Dropout(0.3), Dense(128), Dropout(0.5), Dense(3)
+- Otimizador: Adam (lr=0.001)
+- Função de perda: categorical_crossentropy
+
+Data de treinamento: 2026-03-30 21:07:46
